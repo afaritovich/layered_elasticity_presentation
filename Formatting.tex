@@ -1,0 +1,58 @@
+\usepackage{amssymb,amsfonts,amsmath,mathtext}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{cite,enumerate,float,indentfirst}
+\usepackage{graphicx}
+
+%For putting links into papers, also helps make cross-references in the paper smart references
+% \usepackage[colorlinks = true, linkcolor = blue, urlcolor  = blue, citecolor = blue, anchorcolor = blue]{hyperref} 
+%smarter cross-references, these options turn links blue
+
+%Tables
+\usepackage{caption} %For table captions
+
+%highlights text with \hl{text}
+\usepackage{color, soul}
+
+\graphicspath{{images/}}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+% \usepackage{palatino}
+\usepackage{graphicx}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{ifthen}
+\usepackage{subfigure}
+\usepackage{amsthm}
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+
+\RequirePackage{caption}
+% \DeclareCaptionLabelSeparator{defffis}{ -- } % Separator
+
+\captionsetup[figure]{
+    justification=centering,
+    labelfont=it,
+    textfont={bf,it},
+    labelsep=colon,
+    format=plain} % Подпись рисунка по центру
+
+\captionsetup[table]{
+    justification=raggedright,
+    labelfont=it,
+    textfont={bf,it},
+    labelsep=colon,   
+	format=plain, 
+	singlelinecheck=false
+} % Подпись таблицы слева
+
+\mode<presentation> {
+  %\usetheme{Warsaw}
+  \usetheme{Madrid}
+  %\usetheme{Frankfurt}
+  \usecolortheme{seahorse}
+}
+
+\addtobeamertemplate{frametitle}{}{%     upper-line
+	\vskip-1em
+}
